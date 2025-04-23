@@ -20,11 +20,6 @@ public class InputManger : MonoBehaviour
 
     }
 
-    private void Update()
-    {
-        //shoot.ReadyToShoot(neutralActions.Shoot.triggered);
-    }
-
     void FixedUpdate()
     {
         motor.ProcessMove(neutralActions.Movement.ReadValue<Vector2>());

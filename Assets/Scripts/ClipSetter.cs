@@ -18,12 +18,11 @@ public class ClipSetter : MonoBehaviour
     {
         if (Instance != null && Instance != this)
         {
-            Destroy(gameObject); // Evita duplicados
+            Destroy(gameObject); 
             return;
         }
 
         Instance = this;
-        DontDestroyOnLoad(gameObject); // Opcional: mantiene el objeto entre escenas
     }
     public void StartCrystals()
     {
